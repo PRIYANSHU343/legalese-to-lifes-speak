@@ -7,63 +7,63 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Professional Legal Theme */
-    --background: 248 250 252; /* Cool gray-50 */
-    --foreground: 226 232 240; /* Slate-200 for text */
+    /* GitHub Dark Theme - Core Colors */
+    --background: 213 23% 7%; /* GitHub's dark background #0d1117 */
+    --foreground: 213 31% 91%; /* Light gray text #e6edf3 */
 
     /* Card System */
-    --card: 255 255 255; /* Pure white for documents */
-    --card-foreground: 15 23 42; /* Slate-800 for readability */
+    --card: 215 28% 17%; /* Slightly lighter cards #21262d */
+    --card-foreground: 213 31% 91%; /* Light text on cards */
 
     /* Interactive Elements */
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover: 215 28% 17%;
+    --popover-foreground: 213 31% 91%;
 
-    /* Professional Blue Primary */
-    --primary: 214 88% 27%; /* Deep professional blue */
-    --primary-foreground: 248 250 252;
-    --primary-glow: 214 88% 35%;
+    /* GitHub Blue Primary */
+    --primary: 212 92% 45%; /* GitHub's blue #1f6feb */
+    --primary-foreground: 213 31% 91%;
+    --primary-glow: 212 92% 55%;
 
     /* Secondary Neutral */
-    --secondary: 241 245 249; /* Slate-100 */
-    --secondary-foreground: 51 65 85; /* Slate-600 */
+    --secondary: 215 28% 17%; /* Dark gray */
+    --secondary-foreground: 213 31% 91%;
 
     /* Muted Text System */
-    --muted: 248 250 252; /* Slate-50 */
-    --muted-foreground: 100 116 139; /* Slate-500 */
+    --muted: 215 28% 17%;
+    --muted-foreground: 220 14% 71%; /* GitHub's muted text #8b949e */
 
-    /* Accent - Trust Building */
-    --accent: 226 232 240; /* Slate-200 */
-    --accent-foreground: 30 41 59; /* Slate-700 */
+    /* Accent Colors */
+    --accent: 215 28% 17%;
+    --accent-foreground: 213 31% 91%;
 
     /* Risk Assessment Colors */
-    --risk-high: 0 84% 60%; /* Red-500 for dangers */
-    --risk-high-foreground: 254 242 242; /* Red-50 */
-    --risk-medium: 45 93% 47%; /* Amber-500 for caution */
-    --risk-medium-foreground: 255 251 235; /* Amber-50 */
-    --risk-low: 142 71% 45%; /* Green-600 for positive */
-    --risk-low-foreground: 240 253 244; /* Green-50 */
+    --risk-high: 0 85% 63%; /* Brighter red for dark theme */
+    --risk-high-foreground: 213 31% 91%;
+    --risk-medium: 45 93% 58%; /* Brighter amber */
+    --risk-medium-foreground: 213 31% 91%;
+    --risk-low: 142 71% 55%; /* Brighter green */
+    --risk-low-foreground: 213 31% 91%;
 
     /* Document Analysis Colors */
-    --highlight-original: 219 78% 95%; /* Blue-50 for original text */
-    --highlight-simplified: 220 95% 96%; /* Indigo-50 for simplified */
+    --highlight-original: 212 92% 25%; /* Darker blue highlight */
+    --highlight-simplified: 220 95% 25%; /* Darker indigo highlight */
 
-    /* Professional Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(214 88% 27%), hsl(214 88% 35%));
-    --gradient-card: linear-gradient(180deg, hsl(255 255 255), hsl(248 250 252));
-    --gradient-risk-high: linear-gradient(135deg, hsl(0 84% 60% / 0.1), hsl(0 84% 60% / 0.05));
-    --gradient-risk-medium: linear-gradient(135deg, hsl(45 93% 47% / 0.1), hsl(45 93% 47% / 0.05));
-    --gradient-risk-low: linear-gradient(135deg, hsl(142 71% 45% / 0.1), hsl(142 71% 45% / 0.05));
+    /* GitHub Dark Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(212 92% 45%), hsl(212 92% 55%));
+    --gradient-card: linear-gradient(180deg, hsl(215 28% 17%), hsl(213 23% 7%));
+    --gradient-risk-high: linear-gradient(135deg, hsl(0 85% 63% / 0.2), hsl(0 85% 63% / 0.1));
+    --gradient-risk-medium: linear-gradient(135deg, hsl(45 93% 58% / 0.2), hsl(45 93% 58% / 0.1));
+    --gradient-risk-low: linear-gradient(135deg, hsl(142 71% 55% / 0.2), hsl(142 71% 55% / 0.1));
 
-    /* Shadows for Trust */
-    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-document: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
-    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    /* Dark Theme Shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.5), 0 1px 2px -1px hsl(0 0% 0% / 0.5);
+    --shadow-document: 0 4px 6px -1px hsl(0 0% 0% / 0.5), 0 2px 4px -2px hsl(0 0% 0% / 0.5);
+    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -4px hsl(0 0% 0% / 0.5);
 
-    /* Borders and Inputs */
-    --border: 226 232 240; /* Slate-200 */
-    --input: 226 232 240;
-    --ring: 214 88% 27%;
+    /* Borders and Inputs - GitHub Dark */
+    --border: 220 23% 18%; /* GitHub's border #30363d */
+    --input: 220 23% 18%;
+    --ring: 212 92% 45%;
 
     /* Layout */
     --radius: 0.75rem;
@@ -139,17 +139,20 @@
     font-feature-settings: 'kern' 1, 'liga' 1;
   }
 
-  /* Risk Highlight Classes */
+  /* Risk Highlight Classes - Updated for Dark Theme */
   .risk-high {
-    @apply bg-gradient-to-r from-red-50 to-red-50/50 border-l-4 border-red-500 text-red-900;
+    background: var(--gradient-risk-high);
+    @apply border-l-4 border-risk-high text-risk-high-foreground;
   }
 
   .risk-medium {
-    @apply bg-gradient-to-r from-amber-50 to-amber-50/50 border-l-4 border-amber-500 text-amber-900;
+    background: var(--gradient-risk-medium);
+    @apply border-l-4 border-risk-medium text-risk-medium-foreground;
   }
 
   .risk-low {
-    @apply bg-gradient-to-r from-green-50 to-green-50/50 border-l-4 border-green-600 text-green-900;
+    background: var(--gradient-risk-low);
+    @apply border-l-4 border-risk-low text-risk-low-foreground;
   }
 
   /* Animation for professional feel */
@@ -168,18 +171,22 @@
     }
   }
 
-  /* Custom scrollbar for document areas */
+  /* Custom scrollbar for document areas - Dark Theme */
   .custom-scrollbar::-webkit-scrollbar {
     width: 8px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-track {
-    @apply bg-slate-100;
+    background: hsl(var(--muted));
     border-radius: 4px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-slate-300 hover:bg-slate-400;
+    background: hsl(var(--border));
     border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
   }
 }
