@@ -151,6 +151,20 @@ const Index = () => {
 
             {/* Upload Section */}
             <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-6">
+                <p className="text-sm text-muted-foreground mb-3">
+                  Don't have a legal document handy? Try our demo:
+                </p>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={() => window.open('/demo-rental-agreement.txt', '_blank')}
+                  className="mb-4"
+                >
+                  Download Demo Rental Agreement
+                </Button>
+              </div>
+              
               <DocumentUpload 
                 onFileSelect={handleFileSelect}
                 isProcessing={isProcessing}
